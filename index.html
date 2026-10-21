@@ -12,7 +12,35 @@
             text-align: center;
             background-color: #f7f7f7;
         }
-
+  /* BACK TO PORTFOLIO BUTTON (Top Right Floating Badge / Nav Button) */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      color: #486581;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: clamp(12px, 1.6vw, 14px);
+      padding: 10px 18px;
+      border-radius: 9999px;
+      border: 2px solid #e6b94a;
+      box-shadow: 0 4px 16px rgba(71, 85, 105, 0.15);
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      background: #e6b94a;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(180, 134, 40, 0.3);
+    }
+    .back-btn:active {
+      transform: translateY(0);
+    }
         h1 {
             margin-bottom: 10px;
         }
@@ -45,7 +73,9 @@
     </style>
 </head>
 <body>
-
+<a class="back-btn" href="https://imponrusthjadeh.github.io/FinalProject/#projects" title="Back to Portfolio">
+<span>← Back to Portfolio</span>
+</a>
 <h1>When I Was Your Man</h1>
 <p>Bruno Mars ‧ 2012<br>
 Made by: Impon, Rusthyjade H.</p>
